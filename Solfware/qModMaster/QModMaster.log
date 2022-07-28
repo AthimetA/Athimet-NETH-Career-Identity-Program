@@ -1,0 +1,6 @@
+ WARN 2022-07-28T17:35:40.596 ..\..\qModMaster\src\mainwindow.cpp @ 164 RTU settings changes rejected  
+ERROR 2022-07-28T17:36:32.243 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-28T17:36:33.242 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-28T17:36:34.230 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-28T17:36:35.232 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-28T17:36:36.235 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
