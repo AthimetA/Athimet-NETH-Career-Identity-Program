@@ -130,7 +130,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
 	while (1) {
-    /* USER CODE END WHILE */
 
 		HR[1] = ReadADC(ADC_CHANNEL_0);		// store raw Pot. value
 		HR[2] = ((float)HR[1]/4096)*3300;	// store Pot. voltage in mV
@@ -141,6 +140,8 @@ int main(void)
 			HAL_UART_Transmit(&huart2, data, TxPacketSize, 50);	// send the packet to the master
 
 			TxPacketReady = 0;				// transmission is done
+    /* USER CODE END WHILE */
+
 		}
 	}
   /* USER CODE END 3 */

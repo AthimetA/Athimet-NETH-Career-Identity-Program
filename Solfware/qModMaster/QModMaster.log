@@ -4,3 +4,5 @@ ERROR 2022-07-28T17:36:33.242 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read 
 ERROR 2022-07-28T17:36:34.230 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
 ERROR 2022-07-28T17:36:35.232 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
 ERROR 2022-07-28T17:36:36.235 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ WARN 2022-07-28T21:37:36.085 ..\..\qModMaster\src\mainwindow.cpp @ 198 Settings changes rejected  
+ WARN 2022-07-28T21:39:10.395 ..\..\qModMaster\src\mainwindow.cpp @ 198 Settings changes rejected  

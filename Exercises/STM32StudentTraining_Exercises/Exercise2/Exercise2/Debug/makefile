@@ -60,8 +60,8 @@ all: main-build
 main-build: Exercise2.elf secondary-outputs
 
 # Tool invocations
-Exercise2.elf Exercise2.map: $(OBJS) $(USER_OBJS) C:\Users\mobil\Desktop\Toyota\Exercises\STM32StudentTraining_Exercises\Exercise2\Exercise2\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Exercise2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\mobil\Desktop\Toyota\Exercises\STM32StudentTraining_Exercises\Exercise2\Exercise2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Exercise2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Exercise2.elf Exercise2.map: $(OBJS) $(USER_OBJS) C:\Users\mobil\Desktop\Athimet-NETH-Career-Identity-Program\Exercises\STM32StudentTraining_Exercises\Exercise2\Exercise2\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Exercise2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\mobil\Desktop\Athimet-NETH-Career-Identity-Program\Exercises\STM32StudentTraining_Exercises\Exercise2\Exercise2\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Exercise2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
