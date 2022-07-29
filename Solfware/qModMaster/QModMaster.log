@@ -132,3 +132,6 @@ ERROR 2022-07-29T14:49:53.941 ..\..\qModMaster\src\modbusadapter.cpp @ 75 Connec
 ERROR 2022-07-29T14:49:54.216 ..\..\qModMaster\src\modbusadapter.cpp @ 75 Connection failed. Could not connect to serial port 
 ERROR 2022-07-29T14:49:54.467 ..\..\qModMaster\src\modbusadapter.cpp @ 75 Connection failed. Could not connect to serial port 
 ERROR 2022-07-29T14:50:21.071 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T14:56:37.221 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write Data failed.  "Error : Invalid CRC" 
+ERROR 2022-07-29T14:56:41.972 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T14:56:50.161 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write Data failed.  "Error : Timeout" 

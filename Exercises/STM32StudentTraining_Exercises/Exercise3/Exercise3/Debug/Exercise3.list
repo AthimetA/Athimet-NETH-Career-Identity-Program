@@ -477,7 +477,7 @@ void Modbus_handler(uint8_t *buffer) {
  80005ae:	4a1b      	ldr	r2, [pc, #108]	; (800061c <Modbus_handler+0xd4>)
  80005b0:	6013      	str	r3, [r2, #0]
 
-		HR[hrIndex] = (((unsigned short)buffer[4]) << 8) | (unsigned short)buffer[5];
+		HR[hrIndex] = (((unsigned short)buffer[4]) << 8) | (unsigned short)buffer[5]; // TO DO #1
  80005b2:	687b      	ldr	r3, [r7, #4]
  80005b4:	3304      	adds	r3, #4
  80005b6:	781b      	ldrb	r3, [r3, #0]
@@ -495,12 +495,12 @@ void Modbus_handler(uint8_t *buffer) {
  80005ce:	4a14      	ldr	r2, [pc, #80]	; (8000620 <Modbus_handler+0xd8>)
  80005d0:	f822 1013 	strh.w	r1, [r2, r3, lsl #1]
 
-		for(i = 0; i < 8; i++)
+		for(i = 0; i < 8; i++)// TO DO #2
  80005d4:	2300      	movs	r3, #0
  80005d6:	60fb      	str	r3, [r7, #12]
  80005d8:	e00b      	b.n	80005f2 <Modbus_handler+0xaa>
 		{
-			data[i] = buffer[i];
+			data[i] = buffer[i];// TO DO #3
  80005da:	68fb      	ldr	r3, [r7, #12]
  80005dc:	687a      	ldr	r2, [r7, #4]
  80005de:	4413      	add	r3, r2
@@ -510,7 +510,7 @@ void Modbus_handler(uint8_t *buffer) {
  80005e6:	4413      	add	r3, r2
  80005e8:	460a      	mov	r2, r1
  80005ea:	701a      	strb	r2, [r3, #0]
-		for(i = 0; i < 8; i++)
+		for(i = 0; i < 8; i++)// TO DO #2
  80005ec:	68fb      	ldr	r3, [r7, #12]
  80005ee:	3301      	adds	r3, #1
  80005f0:	60fb      	str	r3, [r7, #12]
@@ -518,20 +518,18 @@ void Modbus_handler(uint8_t *buffer) {
  80005f4:	2b07      	cmp	r3, #7
  80005f6:	ddf0      	ble.n	80005da <Modbus_handler+0x92>
 		}
-		TxPacketSize = i;
- 80005f8:	4a0b      	ldr	r2, [pc, #44]	; (8000628 <Modbus_handler+0xe0>)
- 80005fa:	68fb      	ldr	r3, [r7, #12]
- 80005fc:	6013      	str	r3, [r2, #0]
-		TxPacketReady = 1;
+		TxPacketSize = 8;// TO DO #4
+ 80005f8:	4b0b      	ldr	r3, [pc, #44]	; (8000628 <Modbus_handler+0xe0>)
+ 80005fa:	2208      	movs	r2, #8
+ 80005fc:	601a      	str	r2, [r3, #0]
+		TxPacketReady = 1;// TO DO #5
  80005fe:	4b0b      	ldr	r3, [pc, #44]	; (800062c <Modbus_handler+0xe4>)
  8000600:	2201      	movs	r2, #1
  8000602:	601a      	str	r2, [r3, #0]
  8000604:	e000      	b.n	8000608 <Modbus_handler+0xc0>
 		return;
  8000606:	bf00      	nop
-														// TO DO #4
 
-														// TO DO #5
 	}
 
 }

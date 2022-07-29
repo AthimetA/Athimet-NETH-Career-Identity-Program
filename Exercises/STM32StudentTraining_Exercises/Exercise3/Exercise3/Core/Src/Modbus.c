@@ -37,22 +37,15 @@ void Modbus_handler(uint8_t *buffer) {
 	{
 		hrIndex = (((unsigned short)buffer[2]) << 8) | (unsigned short)buffer[3];	// the register address
 
-		HR[hrIndex] = (((unsigned short)buffer[4]) << 8) | (unsigned short)buffer[5];
+		HR[hrIndex] = (((unsigned short)buffer[4]) << 8) | (unsigned short)buffer[5]; // TO DO #1
 
-		for(i = 0; i < 8; i++)
+		for(i = 0; i < 8; i++)// TO DO #2
 		{
-			data[i] = buffer[i];
+			data[i] = buffer[i];// TO DO #3
 		}
-		TxPacketSize = i;
-		TxPacketReady = 1;
-														// TO DO #1
+		TxPacketSize = 8;// TO DO #4
+		TxPacketReady = 1;// TO DO #5
 
-														// TO DO #2
-														// TO DO #3
-
-														// TO DO #4
-
-														// TO DO #5
 	}
 
 }
