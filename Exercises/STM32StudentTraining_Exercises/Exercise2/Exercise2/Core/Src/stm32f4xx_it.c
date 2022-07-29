@@ -207,7 +207,7 @@ void TIM1_TRG_COM_TIM11_IRQHandler(void)
   /* USER CODE BEGIN TIM1_TRG_COM_TIM11_IRQn 0 */
 
 	// stop timer
-	  TIM11->CR1 &= 0xFFFE;
+	TIM11->CR1 &= 0xFFFE;
 
 	Modbus_handler(buffer);
 
@@ -219,6 +219,7 @@ void TIM1_TRG_COM_TIM11_IRQHandler(void)
 	TIM11->SR &= 0xFFFE;
 
   /* USER CODE END TIM1_TRG_COM_TIM11_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim11);
   /* USER CODE BEGIN TIM1_TRG_COM_TIM11_IRQn 1 */
   /* USER CODE END TIM1_TRG_COM_TIM11_IRQn 1 */
 }
@@ -243,16 +244,14 @@ void USART2_IRQHandler(void)
 		buffer[index++] = USART2->DR;
 	}
 
-    /* USER CODE END USART2_IRQn 0 */
-
-    HAL_UART_IRQHandler(&huart2);
-
-    /* USER CODE BEGIN USART2_IRQn 1 */
+  /* USER CODE END USART2_IRQn 0 */
+  HAL_UART_IRQHandler(&huart2);
+  /* USER CODE BEGIN USART2_IRQn 1 */
 
 	// TO DO #5 : start timer
     TIM11->CR1 |= 0x01;
 
-    /* USER CODE END USART2_IRQn 1 */
+  /* USER CODE END USART2_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

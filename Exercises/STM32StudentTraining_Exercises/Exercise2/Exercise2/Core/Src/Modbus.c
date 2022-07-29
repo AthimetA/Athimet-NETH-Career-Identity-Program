@@ -61,6 +61,10 @@ void Modbus_handler(uint8_t *buffer) {
 		data[i] = (unsigned char)(uchCRC & 0xFF);
 		data[i+1] = (unsigned char)(uchCRC >> 8);
 	}
+	else if(buffer[1] == 0x06)
+	{
+		// do the code
+	}
 
 	TxPacketReady = 1;	// signal main loop to handle packet transmission
 }
