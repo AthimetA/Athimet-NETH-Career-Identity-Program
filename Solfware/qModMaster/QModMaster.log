@@ -136,3 +136,7 @@ ERROR 2022-07-29T14:56:37.221 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write
 ERROR 2022-07-29T14:56:41.972 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write Data failed.  "Error : Timeout" 
 ERROR 2022-07-29T14:56:50.161 ..\..\qModMaster\src\modbusadapter.cpp @ 401 Write Data failed.  "Error : Timeout" 
 ERROR 2022-07-29T15:00:29.642 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T16:20:34.049 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T16:20:55.892 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T16:22:00.548 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
+ERROR 2022-07-29T16:22:07.246 ..\..\qModMaster\src\modbusadapter.cpp @ 291 Read Data failed.  "Error : Timeout" 
