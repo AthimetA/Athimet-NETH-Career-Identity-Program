@@ -39,10 +39,11 @@ void Modbus_handler(uint8_t *buffer) {
 
 		HR[hrIndex] = (((unsigned short)buffer[4]) << 8) | (unsigned short)buffer[5]; // TO DO #1
 
-		for(i = 0; i < 8; i++)// TO DO #2
-		{
-			data[i] = buffer[i];// TO DO #3
-		}
+		memcpy(data,buffer,8);
+//		for(i = 0; i < 8; i++)// TO DO #2
+//		{
+//			data[i] = buffer[i];// TO DO #3
+//		}
 		TxPacketSize = 8;// TO DO #4
 		TxPacketReady = 1;// TO DO #5
 
